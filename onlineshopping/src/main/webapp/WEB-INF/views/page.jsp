@@ -21,6 +21,10 @@
 
 <title>Online Shopping - ${title}</title>
 
+<script>
+	window.menu = '${title}'
+</script>
+
 <!-- Bootstrap core CSS -->
 <link href="${css}/bootstrap.min.css" rel="stylesheet">
 
@@ -39,18 +43,18 @@
 	<c:if test="${userClickHome == true }">
 		<%@include file="home.jsp"%>
 	</c:if>
-	
+
 	<!-- Load only when User clicks About-->
 	<c:if test="${userClickAbout == true }">
 		<%@include file="about.jsp"%>
 	</c:if>
-	
+
 	<!-- Load only when User clicks Contact-->
 	<c:if test="${userClickContact == true }">
 		<%@include file="contact.jsp"%>
 	</c:if>
-	
-	
+
+
 	<!-- Footer -->
 	<%@include file="./shared/footer.jsp"%>
 
@@ -58,6 +62,9 @@
 	<script src="${js}/jquery.js"></script>
 	<script src="${js}/bootstrap.bundle.min.js"></script>
 
+	<!-- Self Coded JavaScriptt -->
+	<script src="${js}/myapp.js"></script>
+	
 </body>
 
 </html>

@@ -3,7 +3,7 @@
 	<div class="row">
 	
 		<h1>Contact Us</h1>
-		</hr>
+		<hr/>
 		<p>This is an Contact Us page</p>
 	
 	</div>
