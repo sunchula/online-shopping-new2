@@ -4,14 +4,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.junit.experimental.categories.Categories;
+import org.springframework.stereotype.Repository;
 
 import net.praveen.shoppingbackend.dao.CategoryDAO;
 import net.praveen.shoppingbackend.dto.Category;
 
+@Repository("CategoryDAO")
 public class CategoryDAOImpl implements CategoryDAO {
 
 	static List<Category> categories = new ArrayList<>();
-	
 
 	static {
 		Category category = new Category();
@@ -39,7 +40,7 @@ public class CategoryDAOImpl implements CategoryDAO {
 		category.setImageURL("CAT_3.png");
 		categories.add(category);
 
-		// adding Third category
+		// adding Fourth category
 		category = new Category();
 		category.setId(4);
 		category.setName("IPOD");
@@ -50,8 +51,7 @@ public class CategoryDAOImpl implements CategoryDAO {
 		System.out.println(categories);
 
 	}
-	
-	
+
 	@Override
 	public List<Category> list() {
 		// TODO Auto-generated method stub

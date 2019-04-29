@@ -24,6 +24,13 @@
 
 	<dependencies>
 
+		<!-- Linking Backend Project -->
+		<dependency>
+			<groupId>net.praveen</groupId>
+			<artifactId>shoppingbackend</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		
 		<!-- Java EE API -->
 		<dependency>
 			<groupId>javaee</groupId>
@@ -32,14 +39,14 @@
 			<scope>provided</scope>
 		</dependency>
 
-		<!--Spring  -->
+		<!--Spring -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
-		
-		<!--JSTL  -->
+
+		<!--JSTL -->
 		<dependency>
 			<groupId>jstl</groupId>
 			<artifactId>jstl</artifactId>
