@@ -34,7 +34,6 @@ public class CategoryTestCase {
 		category.setName("Television");
 		category.setDescription("This is Some Description of Television");
 		category.setImageURL("CAT_1.png");
-		
 		assertEquals("Successfully Added a catgory inside Table", true,categoryDAO.add(category));
 	}
 }
